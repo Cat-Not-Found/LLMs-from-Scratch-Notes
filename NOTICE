@@ -1,0 +1,20 @@
+LLMs-from-Scratch Reproduction Notes
+Copyright 2025 Cat-Not-Found (https://github.com/Cat-Not-Found)
+
+This repository is a personal study reproduction of the code in
+
+    "Build a Large Language Model (From Scratch)" by Sebastian Raschka (Manning, 2024)
+    https://github.com/rasbt/LLMs-from-scratch
+
+The model implementations, training utilities, figures and datasets originate from that
+project and are used/adapted here under the Apache License 2.0. The markdown notes were
+written by the repository owner while following the book.
+
+Files adapted from the original project include, but are not limited to:
+  utils/previous_chapters.py
+  utils/gpt_download.py
+  ch05/app.py
+  scripts/gpt_with_kv_cache.py
+  scripts/hyperparam_search.py
+
+No endorsement by the original author is implied.
