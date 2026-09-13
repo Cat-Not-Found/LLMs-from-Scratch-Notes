@@ -1,0 +1,33 @@
+# Python dependencies for the notebooks and scripts in this repository.
+#
+# The versions below are the ones the notebooks were actually executed with
+# (conda environment "LLMs", Python 3.10.4). They are pinned for reproducibility;
+# feel free to relax the pins if you only want to read/run the notebooks.
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# Note: this installs the CPU build of torch. For CUDA, follow
+# https://pytorch.org/get-started/locally/ and install torch first.
+
+# Core numerical stack
+numpy==2.2.6
+pandas==2.3.3
+matplotlib==3.10.9
+
+# Deep learning
+torch==2.13.0            # CPU or CUDA build, see https://pytorch.org
+triton==3.7.1            # required by torch.compile / the ch05 notebook
+bitsandbytes==0.50.2     # 8-bit AdamW used in ch06
+
+# Tokenizer and pretrained GPT-2 weights
+tiktoken==0.9.0
+tensorflow==2.21.0       # only used to read the OpenAI GPT-2 TensorFlow checkpoints
+
+# Data download helpers
+requests==2.34.2
+tqdm==4.70.0
+thop==0.1.1-2209072238   # FLOPs analysis in ch03
+
+# Chat UI for ch05/app.py (optional)
+chainlit==2.12.0
